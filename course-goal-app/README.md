@@ -20,10 +20,10 @@ This screenshot shows the Course Goal Demo App's main interface
 
 ![Screenshot 1](coursegoalapp.png)
 
-if entering a valid input (not empty)
+while entering a valid input (not empty)
 
 ![Screenshot 2](css-demo-app.png)
 
-if entering an empty input
+if the user enter an empty input
 
 ![Screenshot 2](css-demo-app-error.png)
