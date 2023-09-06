@@ -24,6 +24,6 @@ while entering a valid input (not empty)
 
 ![Screenshot 2](css-demo-app.png)
 
-if the user enter an empty input
+if the user try to add an empty input
 
 ![Screenshot 2](css-demo-app-error.png)
