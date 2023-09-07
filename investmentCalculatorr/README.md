@@ -4,9 +4,8 @@
 
 ## Screenshots
 
-![Screenshot 1](screenshots/screenshot1.png)
+![Screenshot 1](images/atfirst.png)
 At first
 
-![Screenshot 2](screenshots/screenshot2.png)
+![Screenshot 2](images/calcbutton.png)
 after clicking on the Calculate button
-
