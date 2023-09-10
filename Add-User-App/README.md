@@ -23,8 +23,8 @@ If the age input is less than 1 or any of the inputs are invalid (e.g., empty na
 ##screeshots
 
 Adding users 
-![Screenshot 1](screenshots/screenshot1.png)
+![Screenshot 1](imagesuserapp/users.png)
 If one of the input fields is empty
-![Screenshot 1](screenshots/screenshot1.png)
+![Screenshot 1](imagesuserapp/inputerror.png)
 If the age is less than 1
-![Screenshot 1](screenshots/screenshot1.png)
+![Screenshot 1](imagesuserapp/ageerror.png)
