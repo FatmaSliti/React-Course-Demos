@@ -35,8 +35,8 @@ Follow these steps to set up and run the Authentication App locally:
 
 - git clone https://github.com/FatmaSliti/React-Course-Demos.git
 - cd Authentication-App 
-- npm install && \  # or "yarn install" if you prefer yarn
-- npm start          # or "yarn start" if you prefer yarn
+- npm install   or "yarn install" if you prefer yarn
+- npm start     or "yarn start" if you prefer yarn
 
 ## Screenshots
 
