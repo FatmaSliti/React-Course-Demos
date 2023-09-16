@@ -12,7 +12,7 @@ after clicking on the Calculate button
 
 ## Getting Started
 
-Follow these steps to set up and run the Authentication App locally:
+Follow these steps to set up and run the investment caculator App locally:
 
 - git clone https://github.com/FatmaSliti/React-Course-Demos.git
 - cd investmentCalculatorr
