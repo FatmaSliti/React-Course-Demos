@@ -10,3 +10,11 @@ At first
 after clicking on the Calculate button
 ![Screenshot 2](images/calcbutton.png)
 
+## Getting Started
+
+Follow these steps to set up and run the investment caculator App locally:
+
+- git clone https://github.com/FatmaSliti/React-Course-Demos.git
+- cd investmentCalculatorr
+- npm install         or "yarn install" if you prefer yarn
+- npm start           or "yarn start" if you prefer yarn

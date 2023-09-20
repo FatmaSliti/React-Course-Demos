@@ -20,7 +20,7 @@ This is a simple "Add User" app that allows you to input a user's name and age a
 
 If the age input is less than 1 or any of the inputs are invalid (e.g., empty name), you will see an error message. Otherwise, the user will be added to the list of users.
 
-##screeshots
+## Screenshots
 
 Adding users 
 ![Screenshot 1](imagesuserapp/users.png)
