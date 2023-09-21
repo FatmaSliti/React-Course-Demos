@@ -8,6 +8,8 @@ Two React demos showcasing various optimization techniques.
 
 - ## Learning Goals
 
+A look behind the scenes of React (component re-renders / state ...)
+
 These demos demonstrates three important optimization techniques in React:
 
 1. **`useCallback`**: Learn how to optimize function references to prevent unnecessary re-renders and improve performance.
