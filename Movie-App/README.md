@@ -29,7 +29,7 @@ In this demo, we'll demonstrate how to fetch data from a Firebase backend and se
 
 ## Usage
 git clone 'repo path'
-`cd Movie-App`
-`cd Movie-Finder-app` or `cd movie-manager-app`
-`npm install`
-`npm start`
+- `cd Movie-App`
+- `cd Movie-Finder-app` or `cd movie-manager-app`
+- `npm install`
+- `npm start`
