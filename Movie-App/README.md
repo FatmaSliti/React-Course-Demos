@@ -1,6 +1,7 @@
 # Movie App
 
-Welcome to the Movie App repository! This app showcases two demos: one for fetching movies from the Star Wars API and the other for fetching and sending data to a Firebase backend.
+Welcome to the Movie App repository!
+This app showcases two demos: one for fetching movies from the Star Wars API and the other for fetching and sending data to a Firebase backend.
 
 ## Demo 1: Fetching Movies from Star Wars API
 
