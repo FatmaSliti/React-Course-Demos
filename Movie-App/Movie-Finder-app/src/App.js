@@ -8,8 +8,6 @@ function App() {
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState(null);
 
-  
-
   //using the async await method
   const fetchMoviesHandler = useCallback(async () => {
     setIsLoading(true);
@@ -20,11 +18,11 @@ function App() {
       if (!response.ok) {
         throw new Error('Something went wrong!');
       }
+      //some APIs send back JSON data but the API we are using here send back non-JSON data so we must throw the error before we try to parse the response  
 
       const data = await response.json(); //json() : parse the JSON data returned from the server and convert it into JS object
-      //some APIs send back JSON data but the API we are using here send back non-JSON data so we must throw the error before we try to parse that  
 
-      const transformedMovies = data.results.map(movieData => {
+      const transformedMovies = data.results.map(movieData => { //results is table stored in the data object
         return {
           id: movieData.episode_id,
           title: movieData.title,
@@ -62,7 +60,7 @@ function App() {
   //     setMovies(transformedMovies);
   //   })
   // }
-  //results is a table of data inside the obj
+  //then is used to define a function which will be called whenever we got a response
 
   let content = <p>Found no movies.</p>
 
@@ -95,5 +93,3 @@ function App() {
 }
 
 export default App;
-
-//then is used to define a function which will be called whenever we got a response

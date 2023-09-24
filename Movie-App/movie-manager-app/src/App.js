@@ -19,11 +19,11 @@ function App() {
       }
 
       const data = await response.json();
-      console.log(data);
+      // console.log(data);
 
-      const loadedMovies = [];
+      const loadedMovies = []; 
 
-      for (const key in data) {
+      for (const key in data) { //this time we have an object and not an array to use the map method
         loadedMovies.push({
           id: key,
           title: data[key].title,
@@ -33,6 +33,7 @@ function App() {
       }
 
       setMovies(loadedMovies);
+      
     } catch (error) {
       setError(error.message);
     }
