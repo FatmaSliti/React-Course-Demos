@@ -12,7 +12,7 @@ In the **Add-Task-App**, we have created a custom React hook, `useHttp`, to simp
 
 ## Screenshots
 
-### Counter-App
+### Counter App
 
 ![counter](/img/one.png)
 
@@ -24,7 +24,7 @@ In the **Add-Task-App**, we have created a custom React hook, `useHttp`, to simp
 
 To run these demos on your local machine, follow these steps:
 
-- git clone 'url'
+- `git clone https://github.com/FatmaSliti/React-Course-Demos.git`
 - `cd Custom-Hooks-Demos`
 - `cd Counter-App` or `cd Add-Task-App`
 - `npm install`
