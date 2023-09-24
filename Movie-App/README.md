@@ -28,7 +28,7 @@ In this demo, we'll demonstrate how to fetch data from a Firebase backend and se
 ![Firebase Demo](img/one.png)
 
 ## Usage
-git clone 'repo path'
+- `git clone https://github.com/FatmaSliti/React-Course-Demos.git`
 - `cd Movie-App`
 - `cd Movie-Finder-app` or `cd movie-manager-app`
 - `npm install`
