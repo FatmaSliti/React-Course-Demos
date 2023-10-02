@@ -22,11 +22,6 @@ const NewTask = (props) => {
       body: { text: taskText }
     }, createTask.bind(null, taskText));
 
-
-
-
-
-    
   };
 
   return (

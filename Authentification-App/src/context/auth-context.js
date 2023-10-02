@@ -28,8 +28,8 @@ export const AuthContextProvider = (props) => {
     }
 
     return <AuthContext.Provider value={{ isLoggedIn: isLoggedIn, onLogin: loginHandler, onLogout: logoutHandler }}>{props.children}</AuthContext.Provider>
-    // we provided the context / the provider transforms the context to a component cuz jsx needs components
-    // the value is not a custom prop: it should be named value
+    // we provided the context / the provider method transforms the context to a component because jsx needs components
+    // the prop named value is not a custom prop: it should be named value
 }
 
 export default AuthContext;
