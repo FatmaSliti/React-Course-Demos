@@ -6,7 +6,6 @@ This is a demonstration application developed to establish a strong grasp of Red
 
 - [x] Implemented Redux Toolkit, simplifying state management.
 - [x] Utilized Redux Toolkit's `createSlice` for reducers.
-- [x] Integrated actions and action creators with ease.
 - [x] Connected components to the Redux store powered by Redux Toolkit.
 
 ## Description
