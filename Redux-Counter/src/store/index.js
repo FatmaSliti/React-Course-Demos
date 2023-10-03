@@ -5,29 +5,30 @@ const counterReducer = (state = { counter: 0, showCounter: true }, action) => {
     if (action.type === 'increment') {
         return {
             counter: state.counter + 1,
-            showCounter: true
+            showCounter: state.showCounter
         }
     }
 
     if (action.type === 'increase') {
         return {
             counter: state.counter + action.value,
-            showCounter: true
+            showCounter: state.showCounter
         }
     }
 
     if (action.type === 'decrement') {
         return {
             counter: state.counter - 1,
-            showCounter: true
+            showCounter: state.showCounter
         }
     }
 
-    // we repeat showCounter: true each time because the action in Redux store is replaced and do not only override the mutated value  
+    // we repeat showCounter: true each time because the action in Redux store is replaced and the new state will not be merged with the existing state
+
 
     if (action.type === 'toggle') {
         return {
-            showCounter : !state.showCounter,
+            showCounter: !state.showCounter,
             counter: state.counter,
         }
     }

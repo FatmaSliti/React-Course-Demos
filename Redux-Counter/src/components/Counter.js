@@ -2,6 +2,7 @@ import { useSelector, useDispatch, connect } from 'react-redux';//connect functi
 import classes from './Counter.module.css';
 import { Component } from 'react';
 
+
 const Counter = () => {
   const dispatch = useDispatch(); //useDispatch to dispatch/trigger an action
   const counter = useSelector(state => state.counter); // access the data in our store  // the function determines which peace of data we wanna extarct from our store
@@ -17,7 +18,7 @@ const Counter = () => {
   }
 
   const increaseHandler = () => {
-    dispatch({ type: 'increase', value: 20 }); //action payload : extra property which you add to your action objects
+    dispatch({ type: 'increase', value: 5 }); //action payload : extra property which we add to our action objects
   }
 
   const decrementHandler = () => {
