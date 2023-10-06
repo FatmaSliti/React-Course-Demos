@@ -3,7 +3,6 @@ import classes from './Header.module.css';
 // import { authActions } from '../store/indexWithReduxToolkit';
 import { authActions } from '../store/auth-slice';
 
-
 const Header = props => {
   const dispatch = useDispatch();
 

@@ -19,6 +19,7 @@ const counterSlice = createSlice({ //prepare a slice of our global state : we're
         toggleCounter(state) {
             state.showCounter = !state.showCounter;
         },
+        
     }
 });
 
