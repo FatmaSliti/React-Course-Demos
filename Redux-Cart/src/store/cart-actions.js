@@ -5,7 +5,7 @@ import { uiActions } from "./ui-slice"
 export const fetchCartData = () => {
     return async (dispatch) => {
         const fetchData = async () => {
-            const response = await fetch('https://react-http-ba0a5-default-rtdb.firebaseio.com/cart.');
+            const response = await fetch('https://react-http-ba0a5-default-rtdb.firebaseio.com/cart.json');
 
             if (!response.ok) {
                 throw new Error('Could not fetch cart data');
