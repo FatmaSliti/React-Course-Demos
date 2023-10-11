@@ -38,7 +38,7 @@ in case we change the validation from the dev tools the validation from the back
 ![Description of the screenshot](./img/three.png)
 ![Description of the screenshot](./img/four.png)
 ![Description of the screenshot](./img/five.png)
-![Description of the screenshot](./img/six.png)
+![Description of the screenshot](./img/onex.png)
 
 
 ## Getting Started
