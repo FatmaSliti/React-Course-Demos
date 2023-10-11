@@ -77,7 +77,7 @@ export default EventForm;
 
 export const action = async ({ request, params }) => { //{request, params} to get the data from the form
   const method = request.method;
-  const data = await request.formData(); // we can benifit from this formData when use 
+  const data = await request.formData(); // we can benifit from this formData when we use the Form compo instead of form 
 
   // data.get('')//to get access to the input field values that were submitted
 
