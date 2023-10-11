@@ -31,7 +31,9 @@ application.
 
 ## Screenshots
 
-![Description of the screenshot](./img/one.png)
+![Description of the screenshot](./img/seven.png)
+![Description of the screenshot](./img/eight.png)
+in case we change the validation from the dev tools the validation from the backend appears
 ![Description of the screenshot](./img/two.png)
 ![Description of the screenshot](./img/three.png)
 ![Description of the screenshot](./img/four.png)
