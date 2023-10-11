@@ -7,10 +7,14 @@ const Root = () => {
         <>
             <MainNavigation />
             <main className={styles.content}>
-                <Outlet />
+                <Outlet /> {/* render the child routes */}
             </main>
         </>
+        //so this component renders a navigation bar above all the childs and nested childs
     )
 }
 
 export default Root
+
+
+// The < Outlet /> component, placed inside the Root component, serves as a placeholder for the content of child routes
