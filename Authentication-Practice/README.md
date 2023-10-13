@@ -24,7 +24,6 @@ no edit or delete button are shown
 ![Screenshot 1](/imags/four.png)
 ![Screenshot 1](/imags/five.png)
 
-
 after logging in
 the authentification is mutated by the logout button
 ![Screenshot 1](/img/six.png)
