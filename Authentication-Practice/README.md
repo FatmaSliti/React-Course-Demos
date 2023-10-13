@@ -16,21 +16,21 @@ This project is focused on implementing user authentication using tokens and dyn
 - Unauthenticated users are presented with a different UI, guiding them through the authentication process.
 
 ## Screenshots
-![Screenshot 1](/imags/one.png)
+![Screenshot 1](./imags/one.png)
 no add new event button is shown
-![Screenshot 1](/imags/two.png)
+![Screenshot 1](./imags/two.png)
 no edit or delete button are shown
-![Screenshot 1](/imags/three.png)
-![Screenshot 1](/imags/four.png)
-![Screenshot 1](/imags/five.png)
+![Screenshot 1](./imags/three.png)
+![Screenshot 1](./imags/four.png)
+![Screenshot 1](./imags/five.png)
 
 after logging in
 the authentification is mutated by the logout button
-![Screenshot 1](/imags/six.png)
+![Screenshot 1](./imags/six.png)
 we can add a new event
-![Screenshot 1](/imags/seven.png)
+![Screenshot 1](./imags/seven.png)
 we can delete and edit
-![Screenshot 1](/imags/nine.png)
+![Screenshot 1](./imags/nine.png)
 
 
 ## Technologies Used
