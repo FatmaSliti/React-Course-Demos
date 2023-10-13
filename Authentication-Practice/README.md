@@ -26,11 +26,11 @@ no edit or delete button are shown
 
 after logging in
 the authentification is mutated by the logout button
-![Screenshot 1](/img/six.png)
+![Screenshot 1](/imags/six.png)
 we can add a new event
-![Screenshot 1](/img/seven.png)
+![Screenshot 1](/imags/seven.png)
 we can delete and edit
-![Screenshot 1](/img/nine.png)
+![Screenshot 1](/imags/nine.png)
 
 
 ## Technologies Used
