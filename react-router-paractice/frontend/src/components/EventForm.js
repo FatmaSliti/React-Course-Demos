@@ -5,13 +5,13 @@ import classes from "./EventForm.module.css";
 // function EventForm(props) {
 function EventForm({ method, event }) {
   const data = useActionData(); // the response is parsed automatically by react-router for us
-  const navigate = useNavigate();
+  const navigate = useNavigate(); //navigate programatically
   const navigation = useNavigation(); //navigation is an obj
 
   const isSubmitting = navigation.state === 'submitting';
 
   function cancelHandler() {
-    navigate("..");
+    navigate(".."); 
   }
 
   return (
@@ -29,7 +29,7 @@ function EventForm({ method, event }) {
           type="text"
           name="title"
           required
-          defaultValue={event ? event.title : ""}
+          defaultValue={event ? event.title : ""} //to fill the edit form
         />
       </p>
       <p>

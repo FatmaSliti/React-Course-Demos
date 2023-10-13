@@ -50,14 +50,13 @@ export default EventsPage;
 
 
 
-
 async function loadEvents() {
     const response = await fetch('http://localhost:8080/events');
 
     if (!response.ok) {
         throw new Response(JSON.stringify({ message: 'could not fetch events.' }), { status: 500 })
     } else {
-        // return response; when using defer between the loader and useLoaderData we should parse the response manually
+        // return response; // when using defer between the loader and useLoaderData we should parse the response manually
         const resData = await response.json();
         console.log(resData.events)
         return resData.events;
@@ -87,7 +86,6 @@ export function loader() {
 //         return response; // (useLoaderData will extract the data automatically so no need to trasform it with the json method)
 //     }
 // }
-
 
 
 
