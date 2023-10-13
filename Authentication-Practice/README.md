@@ -19,7 +19,7 @@ This project is focused on implementing user authentication using tokens and dyn
 ![Screenshot 1](./imags/one.png)
 no add new event button is shown
 ![Screenshot 1](./imags/two.png)
-no edit or delete button are shown
+no edit or delete buttons are shown
 ![Screenshot 1](./imags/three.png)
 ![Screenshot 1](./imags/four.png)
 ![Screenshot 1](./imags/five.png)
