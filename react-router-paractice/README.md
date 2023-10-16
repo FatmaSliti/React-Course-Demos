@@ -34,7 +34,7 @@ application.
 ![Description of the screenshot](./img/onex.png)
 ![Description of the screenshot](./img/seven.png)
 ![Description of the screenshot](./img/eight.png)
-in case we change the validation from the dev tools the validation from the backend appears
+Even if we make changes in the client-side validation (we removed the required property from the inputs), the backend will still validate the inputs
 ![Description of the screenshot](./img/two.png)
 ![Description of the screenshot](./img/three.png)
 ![Description of the screenshot](./img/four.png)
