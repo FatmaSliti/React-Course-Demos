@@ -23,6 +23,9 @@ This project was created with the primary goal of gaining in-depth knowledge and
 
 ![Alt Text](imags/one.png)
 ![Alt Text](imags/two.png)
+![Alt Text](imags/three.png)
+![Alt Text](imags/four.png)
+![Alt Text](imags/five.png)
 
 
 # React + Vite
