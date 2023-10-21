@@ -30,7 +30,6 @@ function HomePage(props) {
     return (
         <MeetupList meetups={props.meetups} />
     );
-
 }
 
 
@@ -41,7 +40,7 @@ export async function getStaticProps() {
     //2-it only works in the pages folder
     //3-it'll be excuted during the pre-rendering process (before the component and its JSX)
     //4-its job is to prepare props for this page
-    //5-all the code inside of it will never end up on the client side(we can do securely connect to a DB)
+    //5-all the code inside of will never end up on the client side(we can do securely connect to a DB)
     //6-always returns an obj {props: }
 
     //fetch data from an API

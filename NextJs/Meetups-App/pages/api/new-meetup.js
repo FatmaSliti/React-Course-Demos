@@ -12,20 +12,21 @@ async function handler(req, res) {
 
         // const { title, image, address, description } = data;
 
-        const client = await MongoClient.connect('mongodb+srv://fatmasliti:900eTa1yTp6fc7DY@cluster0.wiof51u.mongodb.net/meetups?retryWrites=true&w=majority');
+        // const client = await MongoClient.connect('mongodb+srv://fatmasliti:900eTa1yTp6fc7DY@cluster0.wiof51u.mongodb.net/meetups?retryWrites=true&w=majority');
+        const client = await MongoClient.connect('mongodb+srv://fatmasliti:AZLgG0d4L197VdFf@cluster0.wiof51u.mongodb.net/meetups?retryWrites=true&w=majority');
         const db = client.db();
 
         const meetupCollection = db.collection('meetups');
-        // asingle meetup would be a single document
+        // a single meetup would be a single document
 
-        // meetupCollection.insertOne({ title, image, address, description });
+        // const result = await meetupCollection.insertOne({ title, image, address, description });
         const result = await meetupCollection.insertOne(data);
 
         console.log(result);
 
         client.close();
 
-        res.status(201).json({message: 'Meetup inserted!'})
+        res.status(201).json({ message: 'Meetup inserted!' })
     }
 }
 

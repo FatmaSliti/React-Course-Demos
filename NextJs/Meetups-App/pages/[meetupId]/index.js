@@ -12,10 +12,10 @@ function MeetupDetails() {
     );
 }
 
-export async function getStaticPaths() { //used in dynamic pages containing the getStaticProps function to tell NextJs for which which dynamic values this page should pre-generated
+export async function getStaticPaths() { //used in dynamic pages containing the getStaticProps function to tell NextJs for which dynamic values this page should pre-generated
     return { //all the dynamic segment values (all the meetup IDs (meetup is called a segment)) for which this page should be re-generated
-        fallback: false, // when it's set to false it returns a 404 error for unknown paths (any path except m1 or m2 declared in the paths bellow) or 'blocking' for incremental static regeneration, which allows you to generate pages on-demand
-        //fallback pre-generates only the pages with m1 and m2 IDs (most popular ones in the site for e.g)
+        fallback: false, // when it's set to false it returns a 404 error for unknown paths (any path except m1 or m2 declared in the paths bellow) 
+        //fallback pre-generates only the pages with m1 and m2 IDs (the most popular pages in the site for e.g)
         paths: [
             {
                 params: {
