@@ -36,16 +36,16 @@ export async function getStaticPaths() {
     const meetupCollection = db.collection("meetups");
 
     //fetch data
-    const meetups = await meetupCollection.find({}, { _id: 1 }).toArray(); //all the docs but with only the ID
+    const meetups = await meetupCollection.find({}, { _id: 1 }).toArray(); //{}:all the docs, { _id: 1 }: but with only the ID field
 
     client.close();
 
     //used in dynamic pages containing the getStaticProps function to tell NextJs for which dynamic values this page should pre-generated
     return {
         //all the dynamic segment values (all the meetup IDs (meetup is called a segment)) for which this page should be re-generated
-        fallback: false, // when it's set to false it returns a 404 error for unknown paths (any path except m1 or m2 declared in the paths bellow)
+        // fallback: false, // when it's set to false it returns a 404 error for unknown paths (any path except m1 or m2 declared in the paths bellow)
         //fallback pre-generates only the pages with m1 and m2 IDs (the most popular pages in the site for e.g)
-
+        fallback: 'blocking', //or fallback: true
         paths: meetups.map((meetup) => ({
             params: { meetupId: meetup._id.toString() },
         })),

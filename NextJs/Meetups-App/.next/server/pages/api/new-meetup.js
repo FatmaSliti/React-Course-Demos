@@ -1,35 +1,50 @@
 "use strict";
-/*
- * ATTENTION: An "eval-source-map" devtool has been used.
- * This devtool is neither made for production nor for readable output files.
- * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
- * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
- * or disable the default devtool with "devtool: false".
- * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
- */
 (() => {
 var exports = {};
-exports.id = "pages/api/new-meetup";
-exports.ids = ["pages/api/new-meetup"];
+exports.id = 958;
+exports.ids = [958];
 exports.modules = {
 
-/***/ "mongodb":
-/*!**************************!*\
-  !*** external "mongodb" ***!
-  \**************************/
-/***/ ((module) => {
-
-module.exports = require("mongodb");
-
-/***/ }),
-
-/***/ "(api)/./pages/api/new-meetup.js":
-/*!*********************************!*\
-  !*** ./pages/api/new-meetup.js ***!
-  \*********************************/
+/***/ 5940:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var mongodb__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! mongodb */ \"mongodb\");\n/* harmony import */ var mongodb__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(mongodb__WEBPACK_IMPORTED_MODULE_0__);\n//API routes will only run on the server\n // this obj allows us to connect\n// /api/new-meetup\n// POST /api/new-meetup\nasync function handler(req, res) {\n    //req obj: contains data about the incoming request\n    //res obj: needed for sending back a response\n    if (req.method === \"POST\") {\n        const data = req.body;\n        // const { title, image, address, description } = data;\n        // const client = await MongoClient.connect('mongodb+srv://fatmasliti:900eTa1yTp6fc7DY@cluster0.wiof51u.mongodb.net/meetups?retryWrites=true&w=majority');\n        const client = await mongodb__WEBPACK_IMPORTED_MODULE_0__.MongoClient.connect(\"mongodb+srv://fatmasliti:AZLgG0d4L197VdFf@cluster0.wiof51u.mongodb.net/meetups?retryWrites=true&w=majority\");\n        const db = client.db();\n        const meetupCollection = db.collection(\"meetups\");\n        // a single meetup would be a single document\n        // const result = await meetupCollection.insertOne({ title, image, address, description });\n        const result = await meetupCollection.insertOne(data);\n        console.log(result);\n        client.close();\n        res.status(201).json({\n            message: \"Meetup inserted!\"\n        });\n    }\n}\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (handler);\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKGFwaSkvLi9wYWdlcy9hcGkvbmV3LW1lZXR1cC5qcy5qcyIsIm1hcHBpbmdzIjoiOzs7Ozs7QUFBQSx3Q0FBd0M7QUFDRixDQUFDLGdDQUFnQztBQUV2RSxrQkFBa0I7QUFDbEIsdUJBQXVCO0FBRXZCLGVBQWVDLE9BQU8sQ0FBQ0MsR0FBRyxFQUFFQyxHQUFHLEVBQUU7SUFDN0IsbURBQW1EO0lBQ25ELDZDQUE2QztJQUM3QyxJQUFJRCxHQUFHLENBQUNFLE1BQU0sS0FBSyxNQUFNLEVBQUU7UUFDdkIsTUFBTUMsSUFBSSxHQUFHSCxHQUFHLENBQUNJLElBQUk7UUFFckIsdURBQXVEO1FBRXZELDBKQUEwSjtRQUMxSixNQUFNQyxNQUFNLEdBQUcsTUFBTVAsd0RBQW1CLENBQUMsNEdBQTRHLENBQUM7UUFDdEosTUFBTVMsRUFBRSxHQUFHRixNQUFNLENBQUNFLEVBQUUsRUFBRTtRQUV0QixNQUFNQyxnQkFBZ0IsR0FBR0QsRUFBRSxDQUFDRSxVQUFVLENBQUMsU0FBUyxDQUFDO1FBQ2pELDZDQUE2QztRQUU3QywyRkFBMkY7UUFDM0YsTUFBTUMsTUFBTSxHQUFHLE1BQU1GLGdCQUFnQixDQUFDRyxTQUFTLENBQUNSLElBQUksQ0FBQztRQUVyRFMsT0FBTyxDQUFDQyxHQUFHLENBQUNILE1BQU0sQ0FBQyxDQUFDO1FBRXBCTCxNQUFNLENBQUNTLEtBQUssRUFBRSxDQUFDO1FBRWZiLEdBQUcsQ0FBQ2MsTUFBTSxDQUFDLEdBQUcsQ0FBQyxDQUFDQyxJQUFJLENBQUM7WUFBRUMsT0FBTyxFQUFFLGtCQUFrQjtTQUFFLENBQUM7SUFDekQsQ0FBQztBQUNMLENBQUM7QUFFRCxpRUFBZWxCLE9BQU8iLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9uZXh0anMtY291cnNlLy4vcGFnZXMvYXBpL25ldy1tZWV0dXAuanM/NzM5NCJdLCJzb3VyY2VzQ29udGVudCI6WyIvL0FQSSByb3V0ZXMgd2lsbCBvbmx5IHJ1biBvbiB0aGUgc2VydmVyXHJcbmltcG9ydCB7IE1vbmdvQ2xpZW50IH0gZnJvbSAnbW9uZ29kYic7IC8vIHRoaXMgb2JqIGFsbG93cyB1cyB0byBjb25uZWN0XHJcblxyXG4vLyAvYXBpL25ldy1tZWV0dXBcclxuLy8gUE9TVCAvYXBpL25ldy1tZWV0dXBcclxuXHJcbmFzeW5jIGZ1bmN0aW9uIGhhbmRsZXIocmVxLCByZXMpIHtcclxuICAgIC8vcmVxIG9iajogY29udGFpbnMgZGF0YSBhYm91dCB0aGUgaW5jb21pbmcgcmVxdWVzdFxyXG4gICAgLy9yZXMgb2JqOiBuZWVkZWQgZm9yIHNlbmRpbmcgYmFjayBhIHJlc3BvbnNlXHJcbiAgICBpZiAocmVxLm1ldGhvZCA9PT0gJ1BPU1QnKSB7XHJcbiAgICAgICAgY29uc3QgZGF0YSA9IHJlcS5ib2R5O1xyXG5cclxuICAgICAgICAvLyBjb25zdCB7IHRpdGxlLCBpbWFnZSwgYWRkcmVzcywgZGVzY3JpcHRpb24gfSA9IGRhdGE7XHJcblxyXG4gICAgICAgIC8vIGNvbnN0IGNsaWVudCA9IGF3YWl0IE1vbmdvQ2xpZW50LmNvbm5lY3QoJ21vbmdvZGIrc3J2Oi8vZmF0bWFzbGl0aTo5MDBlVGExeVRwNmZjN0RZQGNsdXN0ZXIwLndpb2Y1MXUubW9uZ29kYi5uZXQvbWVldHVwcz9yZXRyeVdyaXRlcz10cnVlJnc9bWFqb3JpdHknKTtcclxuICAgICAgICBjb25zdCBjbGllbnQgPSBhd2FpdCBNb25nb0NsaWVudC5jb25uZWN0KCdtb25nb2RiK3NydjovL2ZhdG1hc2xpdGk6QVpMZ0cwZDRMMTk3VmRGZkBjbHVzdGVyMC53aW9mNTF1Lm1vbmdvZGIubmV0L21lZXR1cHM/cmV0cnlXcml0ZXM9dHJ1ZSZ3PW1ham9yaXR5Jyk7XHJcbiAgICAgICAgY29uc3QgZGIgPSBjbGllbnQuZGIoKTtcclxuXHJcbiAgICAgICAgY29uc3QgbWVldHVwQ29sbGVjdGlvbiA9IGRiLmNvbGxlY3Rpb24oJ21lZXR1cHMnKTtcclxuICAgICAgICAvLyBhIHNpbmdsZSBtZWV0dXAgd291bGQgYmUgYSBzaW5nbGUgZG9jdW1lbnRcclxuXHJcbiAgICAgICAgLy8gY29uc3QgcmVzdWx0ID0gYXdhaXQgbWVldHVwQ29sbGVjdGlvbi5pbnNlcnRPbmUoeyB0aXRsZSwgaW1hZ2UsIGFkZHJlc3MsIGRlc2NyaXB0aW9uIH0pO1xyXG4gICAgICAgIGNvbnN0IHJlc3VsdCA9IGF3YWl0IG1lZXR1cENvbGxlY3Rpb24uaW5zZXJ0T25lKGRhdGEpO1xyXG5cclxuICAgICAgICBjb25zb2xlLmxvZyhyZXN1bHQpO1xyXG5cclxuICAgICAgICBjbGllbnQuY2xvc2UoKTtcclxuXHJcbiAgICAgICAgcmVzLnN0YXR1cygyMDEpLmpzb24oeyBtZXNzYWdlOiAnTWVldHVwIGluc2VydGVkIScgfSlcclxuICAgIH1cclxufVxyXG5cclxuZXhwb3J0IGRlZmF1bHQgaGFuZGxlclxyXG5cclxuLy90aGUgY29kZSBkZWZpbmVkIGluIGhlcmUgKGFwaSkgd2lsbCBuZXZlciBlbmQgdXAgb24gdGhlIGNsaWVudCBzaWRlXHJcbi8vc28gdGhpcyBpcyBhIHNlY3VyZSBwbGFjZSB0byBzdG9yZSBjcmVkZW50aWFsc1xyXG4iXSwibmFtZXMiOlsiTW9uZ29DbGllbnQiLCJoYW5kbGVyIiwicmVxIiwicmVzIiwibWV0aG9kIiwiZGF0YSIsImJvZHkiLCJjbGllbnQiLCJjb25uZWN0IiwiZGIiLCJtZWV0dXBDb2xsZWN0aW9uIiwiY29sbGVjdGlvbiIsInJlc3VsdCIsImluc2VydE9uZSIsImNvbnNvbGUiLCJsb2ciLCJjbG9zZSIsInN0YXR1cyIsImpzb24iLCJtZXNzYWdlIl0sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///(api)/./pages/api/new-meetup.js\n");
+// ESM COMPAT FLAG
+__webpack_require__.r(__webpack_exports__);
+
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, {
+  "default": () => (/* binding */ new_meetup)
+});
+
+;// CONCATENATED MODULE: external "mongodb"
+const external_mongodb_namespaceObject = require("mongodb");
+;// CONCATENATED MODULE: ./pages/api/new-meetup.js
+//API routes will only run on the server
+ // this obj allows us to connect
+// /api/new-meetup
+// POST /api/new-meetup
+async function handler(req, res) {
+    //req obj: contains data about the incoming request
+    //res obj: needed for sending back a response
+    if (req.method === "POST") {
+        const data = req.body;
+        // const { title, image, address, description } = data;
+        // const client = await MongoClient.connect('mongodb+srv://fatmasliti:900eTa1yTp6fc7DY@cluster0.wiof51u.mongodb.net/meetups?retryWrites=true&w=majority');
+        const client = await external_mongodb_namespaceObject.MongoClient.connect("mongodb+srv://fatmasliti:AZLgG0d4L197VdFf@cluster0.wiof51u.mongodb.net/meetups?retryWrites=true&w=majority");
+        const db = client.db();
+        const meetupCollection = db.collection("meetups");
+        // a single meetup would be a single document
+        // const result = await meetupCollection.insertOne({ title, image, address, description });
+        const result = await meetupCollection.insertOne(data);
+        console.log(result);
+        client.close();
+        res.status(201).json({
+            message: "Meetup inserted!"
+        });
+    }
+}
+/* harmony default export */ const new_meetup = (handler);
+
 
 /***/ })
 
@@ -40,7 +55,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 var __webpack_require__ = require("../../webpack-api-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = (__webpack_exec__("(api)/./pages/api/new-meetup.js"));
+var __webpack_exports__ = (__webpack_exec__(5940));
 module.exports = __webpack_exports__;
 
 })();
