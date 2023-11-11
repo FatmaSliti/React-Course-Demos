@@ -14,11 +14,11 @@ In the **Add-Task-App**, we have created a custom React hook, `useHttp`, to simp
 
 ### Counter App
 
-![Counter-App Screenshot](/images1/counter.png)
+![Counter-App Screenshot](images1/counter.png)
 
 ### Add Task App
 
-![Add-Task-App Screenshot](/images1/Two.png)
+![Add-Task-App Screenshot](images1/Two.png)
 
 ## Getting Started
 
